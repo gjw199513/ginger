@@ -11,6 +11,7 @@ __date__ = '2018/5/24 11:16'
 app = create_app()
 
 
+# 全局异常信息处理
 @app.errorhandler(Exception)
 def framework_error(e):
     if isinstance(e, APIException):
