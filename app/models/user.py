@@ -21,8 +21,6 @@ class User(Base):
         # 指明序列化的属性
         return ['id', 'email', 'nickname', 'auth']
 
-
-
     @property
     def password(self):
         return self._password
