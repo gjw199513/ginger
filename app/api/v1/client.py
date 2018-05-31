@@ -17,7 +17,7 @@ api = Redprint('client')
 def create_client():
     # data = request.json
     # 使用json，需要传入data关键字参数
-    1/0
+
     form = ClientForm().validate_for_api()
     promise = {
         ClientTypeEnum.USER_EMAIL: __register_user_by_email

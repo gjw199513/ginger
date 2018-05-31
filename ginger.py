@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 from werkzeug.exceptions import HTTPException
 
-from app.app import create_app
+from app import create_app
 from app.libs.error import APIException
 
 __author__ = 'gjw'

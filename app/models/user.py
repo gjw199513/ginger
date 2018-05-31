@@ -16,6 +16,13 @@ class User(Base):
     auth = Column(SmallInteger, default=1)
     _password = Column('password', String(100))
 
+    # 获得字典的键
+    def keys(self):
+        # 指明序列化的属性
+        return ['id', 'email', 'nickname', 'auth']
+
+
+
     @property
     def password(self):
         return self._password
