@@ -71,7 +71,3 @@ def delete_user():
     return DeleteSuccess()
 
 
-@api.route('/create')
-def create_user():
-    pass
-# 用户 注册
